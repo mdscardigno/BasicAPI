@@ -9,6 +9,7 @@ namespace BasicAPI
 {
     public class Program
     {
+        // This method is called by the runtime. Use this method to configure the HTTP request pipeline.
         public static async Task Main(string[] args)
         {
             var host = Utilities.CreateWebHostBuilder(args).Build();
