@@ -11,5 +11,10 @@ namespace BasicAPI.Controllers
     [ApiController]
     public class HelloWorldController : ControllerBase
     {
+        [HttpGet]//ANNOTATION TO INDICATE THE SPECIFICS OF THE URL
+        public string SayHello()
+        {
+            return $"Hello World!. It is {DateTime.Now} now.";
+        }
     }
 }
